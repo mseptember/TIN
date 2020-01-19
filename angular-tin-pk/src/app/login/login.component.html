@@ -1,1 +1,32 @@
-<p>login works!</p>
+<header>
+    Logowanie
+</header>
+
+<div id="errors_summary" class="errors-text"></div>
+
+<div class="location-path">
+    <a routerLink='/home'>
+        <img src="../../assets/home.png">
+    </a>
+    <p><a routerLink='/home'>Home</a><small> > </small>Zaloguj</p>
+</div>
+
+<div class="login-form">
+    <form id="form" novalidate method="GET" action="">
+        <div class="login-container">
+            <p class="form-text">Login:</p>
+            <input type="email" name="email" placeholder="adres e-mail" id="email" required>
+            <span id="errors_email" class="errors-text"></span>
+        </div>
+        <div class="login-container">
+            <p class="form-text">Hasło:</p>
+            <input type="password" name="password" placeholder="hasło" id="password" required>
+            <span id="errors_password" class="errors-text"></span>
+        </div>
+        <br>
+        <div class="login-container-submit">
+            <input type="submit" value="Zaloguj" id="inputButton">
+            <p id="errors_info" class="errors-text"></p>
+        </div>
+    </form>
+</div>
