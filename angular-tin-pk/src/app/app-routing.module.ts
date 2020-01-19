@@ -14,6 +14,9 @@ import { EditRecordUserComponent } from './edit-record-user/edit-record-user.com
 import { AllRecordsComponent } from './all-records/all-records.component';
 import { EditRecordApartmentComponent } from './edit-record-apartment/edit-record-apartment.component';
 import { DeleteRecordComponent } from './delete-record/delete-record.component';
+import { ListTenComponent } from './list-ten/list-ten.component';
+import { ListTweComponent } from './list-twe/list-twe.component';
+import { ListThiComponent } from './list-thi/list-thi.component';
 
 
 const routes: Routes = [
@@ -31,7 +34,10 @@ const routes: Routes = [
   { path: 'editrecord/user', component: EditRecordUserComponent },
   { path: 'allrecords', component: AllRecordsComponent },
   { path: 'editrecord/apartment', component: EditRecordApartmentComponent },
-  { path: 'deleterecord', component: DeleteRecordComponent}
+  { path: 'deleterecord', component: DeleteRecordComponent },
+  { path: 'list-ten', component: ListTenComponent },
+  { path: 'list-twe', component: ListTweComponent },
+  { path: 'list-thi', component: ListThiComponent }
 
 ];
 

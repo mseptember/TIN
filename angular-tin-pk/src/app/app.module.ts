@@ -17,6 +17,9 @@ import { EditRecordUserComponent } from './edit-record-user/edit-record-user.com
 import { AllRecordsComponent } from './all-records/all-records.component';
 import { EditRecordApartmentComponent } from './edit-record-apartment/edit-record-apartment.component';
 import { DeleteRecordComponent } from './delete-record/delete-record.component';
+import { ListTenComponent } from './list-ten/list-ten.component';
+import { ListTweComponent } from './list-twe/list-twe.component';
+import { ListThiComponent } from './list-thi/list-thi.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { DeleteRecordComponent } from './delete-record/delete-record.component';
     EditRecordUserComponent,
     AllRecordsComponent,
     EditRecordApartmentComponent,
-    DeleteRecordComponent
+    DeleteRecordComponent,
+    ListTenComponent,
+    ListTweComponent,
+    ListThiComponent
   ],
   imports: [
     BrowserModule,
