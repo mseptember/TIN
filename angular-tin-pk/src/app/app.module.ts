@@ -8,6 +8,11 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ReservationsUserComponent } from './reservations-user/reservations-user.component';
 import { ReservationsOwnerComponent } from './reservations-owner/reservations-owner.component';
+import { DetailsReservationOwnerComponent } from './details-reservation-owner/details-reservation-owner.component';
+import { DetailsReservationUserComponent } from './details-reservation-user/details-reservation-user.component';
+import { DetailsComponent } from './details/details.component';
+import { AddEntityComponent } from './add-entity/add-entity.component';
+import { EditRecordComponent } from './edit-record/edit-record.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { ReservationsOwnerComponent } from './reservations-owner/reservations-ow
     LoginComponent,
     RegisterComponent,
     ReservationsUserComponent,
-    ReservationsOwnerComponent
+    ReservationsOwnerComponent,
+    DetailsReservationOwnerComponent,
+    DetailsReservationUserComponent,
+    DetailsComponent,
+    AddEntityComponent,
+    EditRecordComponent
   ],
   imports: [
     BrowserModule,
