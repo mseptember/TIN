@@ -1,0 +1,63 @@
+header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.location-path {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.location-path img {
+  height: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#container-details {
+  display: grid;
+  width: 100%;
+  height: 400px;
+  grid-template-areas: "pic1 pic2 pic3"
+                       "detail detail book";
+  grid-template-rows: 180px 220px;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+#container-details > .picture1 {
+    grid-area: pic1;
+}
+
+#container-details > .picture2 {
+    grid-area: pic2;
+}
+
+#container-details > .picture3 {
+    grid-area: pic3;
+}
+
+#container-details > .detail {
+    grid-area: detail;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+#container-details > .booking {
+    grid-area: book;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-left: 20px;
+}
+
+body {
+    font-family: sans-serif;
+}

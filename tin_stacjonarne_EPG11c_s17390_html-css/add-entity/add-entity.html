@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="add-entity.css">
+    <title>Dodaj mieszkanie/pokój</title>
+    <script defer src="addEntityValidation.js"></script>
+</head>
+
+<body>
+
+    <header>
+        Dodaj mieszkanie/pokój
+    </header>
+
+    <div id="errors_summary" class="errors-text"></div>
+
+    <div class="location-path">
+        <a href="../main-page/main-page.html" >
+        <img src="home.png">
+        <p><a href="../main-page/main-page.html">Home</a><small> > </small>Dodaj mieszkanie/pokój</p>
+    </div>
+
+    <div class="container">
+        <form class="form-add" id="form" novalidate method="GET" action="">
+
+            Opis<br>
+            <textarea class="opis" rows="10" name="description" id="opis">Lorem ipsum dolor</textarea><br>
+
+            <input placeholder="Nazwa mieszkania" id="name" required><br>
+            <span id="errors_name" class="errors-text"></span>
+
+            <input placeholder="Miasto" id="city" required><br>
+            <span id="errors_city" class="errors-text"></span>
+            <select autocomplete="off">
+                <option selected disabled>Ilość łóżek</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br>
+            Cena<br>
+            <input type="range" value="5000" min="1" max="10000"><br>
+            Metraż<br>
+            <input type="range" value="5000" min="1" max="10000"><br>
+
+            <div class="import">
+                <input class="import-image" placeholder="zdjęcia">
+                <button class="import-button" type="button">Wgraj</button>
+            </div>
+
+            <button type="submit">Zatwierdź</button>
+            <p id="errors_info" class="errors-text"></p>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

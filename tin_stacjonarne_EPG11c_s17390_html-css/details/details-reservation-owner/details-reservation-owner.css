@@ -1,0 +1,86 @@
+header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.location-path {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.location-path img {
+  height: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#container-details {
+  display: grid;
+  width: 100%;
+  height: 400px;
+  grid-template-areas: "pic1 pic2 pic3"
+                       "book book book";
+  grid-template-rows: 180px 348px;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+#container-details > .picture1 {
+    grid-area: pic1;
+}
+
+#container-details > .picture2 {
+    grid-area: pic2;
+}
+
+#container-details > .picture3 {
+    grid-area: pic3;
+}
+
+/*
+#container-details > .detail {
+    grid-area: detail;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-right: 20px;
+    text-align: left;
+}*/
+
+#container-details > .booking {
+    grid-area: book;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 20px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.arrival {
+    font-size: 28px;
+}
+
+.departure {
+    font-size: 28px;
+}
+
+.price {
+    font-size: 28px;
+}
+
+.price-number {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.button-back {
+    height: 28px;
+    width: 100px;
+}
