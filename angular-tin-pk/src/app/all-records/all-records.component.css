@@ -20,7 +20,7 @@ header {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
   }
   
   .grid-item {

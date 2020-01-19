@@ -11,6 +11,9 @@ import { DetailsReservationUserComponent } from './details-reservation-user/deta
 import { AddEntityComponent } from './add-entity/add-entity.component';
 import { EditRecordComponent } from './edit-record/edit-record.component';
 import { EditRecordUserComponent } from './edit-record-user/edit-record-user.component';
+import { AllRecordsComponent } from './all-records/all-records.component';
+import { EditRecordApartmentComponent } from './edit-record-apartment/edit-record-apartment.component';
+import { DeleteRecordComponent } from './delete-record/delete-record.component';
 
 
 const routes: Routes = [
@@ -25,7 +28,10 @@ const routes: Routes = [
   { path: 'details-reservation-user', component: DetailsReservationUserComponent },
   { path: 'addentity', component: AddEntityComponent },
   { path: 'editrecord', component: EditRecordComponent },
-  { path: 'editrecord/user', component: EditRecordUserComponent }
+  { path: 'editrecord/user', component: EditRecordUserComponent },
+  { path: 'allrecords', component: AllRecordsComponent },
+  { path: 'editrecord/apartment', component: EditRecordApartmentComponent },
+  { path: 'deleterecord', component: DeleteRecordComponent}
 
 ];
 

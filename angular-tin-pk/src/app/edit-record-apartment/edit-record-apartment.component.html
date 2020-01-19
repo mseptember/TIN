@@ -1,0 +1,54 @@
+<header>
+    Edycja rekordu - mieszkanie
+</header>
+
+<div class="location-path">
+    <a routerLink="/home">
+        <img src="../../assets/home.png">
+    </a>
+    <p><a routerLink="/home">Home</a><small> > </small><a
+        routerLink="/editrecord">Użytkownik</a><small> > </small>
+        <a routerLink="/allrecords" >Pokaż swoje mieszkania</a><small> > </small>Edytuj
+        mieszkanie</p>
+</div>
+
+<div class="container">
+    <form class="form-add" id="form" novalidate method="GET" action="">
+
+        Opis<br>
+        <textarea rows="10" name="description" id="opis">Lorem ipsum dolor</textarea><br>
+
+        <input placeholder="Nazwa mieszkania" id="name" value="Nazwa mieszkania"><br>
+        <span id="errors_name" class="errors-text"></span>
+
+        <input placeholder="Miasto" id="city" value="Miasto"><br>
+        <span id="errors_city" class="errors-text"></span>
+        <select autocomplete="off">
+            <option hidden disabled>Ilość łóżek</option>
+            <option>1</option>
+            <option>2</option>
+            <option selected>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select><br>
+        Cena<br>
+        <input type="range" value="500" min="1" max="10000"><br>
+        Metraż<br>
+        <input type="range" value="50" min="1" max="1000"><br>
+
+        <div class="import">
+            <input class="import-image" placeholder="zdjęcia">
+            <button class="import-button" type="button">Wgraj</button>
+        </div>
+
+        <button type="submit">Zatwierdź</button>
+        <p id="errors_info" class="errors-text"></p>
+
+    </form>
+
+</div>

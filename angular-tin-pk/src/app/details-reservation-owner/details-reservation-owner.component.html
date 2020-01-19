@@ -3,13 +3,13 @@
 </header>
 
 <div class="location-path">
-    <a href="../../main-page/main-page.html">
-        <img src="home.png">
+    <a routerLink="/home">
+        <img src="../../assets/home.png">
     </a>
-    <p><a href="../../main-page/main-page.html">Home</a><small> > </small><a
-            href="../../edit-record/edit-record.html">Użytkownik</a><small> > </small><a
-            href="../../reservations/owner/reservations-owner.html">Rezerwacje</a><small> > </small>Szczegóły
-        rezerwacji</p>
+    <p><a routerLink="/home">Home</a><small> > </small><a routerLink="/editrecord">Użytkownik</a><small> > </small>
+        <a routerLink="/allrecords">Pokaż swoje mieszkania</a><small> > </small><a
+            routerLink="/reservations/owner">Rezerwacje</a><small> > </small>Szczegóły rezerwacji
+    </p>
 </div>
 
 <h2>"Nazwa mieszkania"</h2>
@@ -17,15 +17,15 @@
 <section id="container-details">
 
     <div class="picture1">
-        <img src="sample-img.PNG">
+        <img src="../../assets/sample-img.PNG">
     </div>
 
     <div class="picture2">
-        <img src="sample-img.PNG">
+        <img src="../../assets/sample-img.PNG">
     </div>
 
     <div class="picture3">
-        <img src="sample-img.PNG">
+        <img src="../../assets/sample-img.PNG">
     </div>
 
     <div class="booking">
@@ -47,7 +47,7 @@
         </div>
         <br>
         <br>
-        <button class="button-back" onclick="location.href='../../reservations/owner/reservations-owner.html'"
+        <button class="button-back" routerLink="/reservations/owner"
             type="button">Wróć</button>
     </div>
 

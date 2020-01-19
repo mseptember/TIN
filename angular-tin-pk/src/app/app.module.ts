@@ -14,6 +14,9 @@ import { DetailsComponent } from './details/details.component';
 import { AddEntityComponent } from './add-entity/add-entity.component';
 import { EditRecordComponent } from './edit-record/edit-record.component';
 import { EditRecordUserComponent } from './edit-record-user/edit-record-user.component';
+import { AllRecordsComponent } from './all-records/all-records.component';
+import { EditRecordApartmentComponent } from './edit-record-apartment/edit-record-apartment.component';
+import { DeleteRecordComponent } from './delete-record/delete-record.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { EditRecordUserComponent } from './edit-record-user/edit-record-user.com
     DetailsComponent,
     AddEntityComponent,
     EditRecordComponent,
-    EditRecordUserComponent
+    EditRecordUserComponent,
+    AllRecordsComponent,
+    EditRecordApartmentComponent,
+    DeleteRecordComponent
   ],
   imports: [
     BrowserModule,
