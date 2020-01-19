@@ -13,6 +13,7 @@ import { DetailsReservationUserComponent } from './details-reservation-user/deta
 import { DetailsComponent } from './details/details.component';
 import { AddEntityComponent } from './add-entity/add-entity.component';
 import { EditRecordComponent } from './edit-record/edit-record.component';
+import { EditRecordUserComponent } from './edit-record-user/edit-record-user.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EditRecordComponent } from './edit-record/edit-record.component';
     DetailsReservationUserComponent,
     DetailsComponent,
     AddEntityComponent,
-    EditRecordComponent
+    EditRecordComponent,
+    EditRecordUserComponent
   ],
   imports: [
     BrowserModule,

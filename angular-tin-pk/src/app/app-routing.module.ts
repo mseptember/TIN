@@ -10,21 +10,23 @@ import { DetailsReservationOwnerComponent } from './details-reservation-owner/de
 import { DetailsReservationUserComponent } from './details-reservation-user/details-reservation-user.component';
 import { AddEntityComponent } from './add-entity/add-entity.component';
 import { EditRecordComponent } from './edit-record/edit-record.component';
+import { EditRecordUserComponent } from './edit-record-user/edit-record-user.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: MainPageComponent },
-  { path: 'register', component: RegisterComponent},
-  { path: 'login', component: LoginComponent},
-  { path: 'reservations/owner', component: ReservationsOwnerComponent},
-  { path: 'reservations/user', component: ReservationsUserComponent},
-  { path : 'details', component: DetailsComponent},
-  { path : 'details-reservation-owner', component: DetailsReservationOwnerComponent},
-  { path : 'details-reservation-user', component: DetailsReservationUserComponent},
-  { path : 'addentity', component: AddEntityComponent},
-  { path : 'editrecord', component: EditRecordComponent}
-  
+  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'reservations/owner', component: ReservationsOwnerComponent },
+  { path: 'reservations/user', component: ReservationsUserComponent },
+  { path: 'details', component: DetailsComponent },
+  { path: 'details-reservation-owner', component: DetailsReservationOwnerComponent },
+  { path: 'details-reservation-user', component: DetailsReservationUserComponent },
+  { path: 'addentity', component: AddEntityComponent },
+  { path: 'editrecord', component: EditRecordComponent },
+  { path: 'editrecord/user', component: EditRecordUserComponent }
+
 ];
 
 @NgModule({

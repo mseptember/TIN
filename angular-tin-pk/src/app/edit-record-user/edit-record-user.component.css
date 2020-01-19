@@ -1,0 +1,31 @@
+header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.location-path {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .location-path img {
+    height: 20px;
+  }
+
+  .container {
+      text-align: center;
+  }
+
+  img {
+      margin: 10px;
+  }
+
+  input {
+      margin: 10px;
+  }
+
+  button {
+      margin: 10px;
+  }

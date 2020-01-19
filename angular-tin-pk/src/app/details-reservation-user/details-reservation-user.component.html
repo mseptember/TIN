@@ -1,1 +1,50 @@
-<p>details-reservation-user works!</p>
+<header>
+    Rezerwacja - szczegóły
+</header>
+
+<div class="location-path">
+    <a routerLink="/home">
+    <img src="../../assets/home.png">
+    </a>
+    <p><a routerLink="/home">Home</a><small> > </small><a routerLink="/editrecord">Użytkownik</a><small> > </small>
+        <a routerLink="/reservations/user">Rezerwacje</a><small> > </small>Szczegóły rezerwacji</p>
+</div>
+
+<h2>"Nazwa mieszkania"</h2>
+
+<section id="container-details">
+
+    <div class="picture1">
+        <img src="../../assets/sample-img.PNG">
+    </div>
+
+    <div class="picture2">
+        <img src="../../assets/sample-img.PNG">
+    </div>
+
+    <div class="picture3">
+        <img src="../../assets/sample-img.PNG">
+    </div>
+
+    <div class="detail">
+        <p>Opis: Lorem ipsum dolor</p><br><br><br><br>
+        <p>Metraż: 100m²</p>
+        <p>Ilość łóżek: 3</p>
+    </div>
+
+    <div class="booking">
+        <div class="arrival">
+            Data przyjazdu: <br>
+            20.04.2019
+        </div>
+        <br>
+        <div class="departue">
+            Data wyjazdu: <br>
+            27.04.2019
+        </div>
+        <p>CENA:</p>
+        <p class="price">418zł</p>
+        <button routerLink="/reservations/user" type="button">Wróć</button>
+    </div>
+
+</section>
