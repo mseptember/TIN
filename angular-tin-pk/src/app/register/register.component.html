@@ -12,37 +12,37 @@
 </div>
 
 <div class="form-full">
-    <form id="form" novalidate method="GET" action="">
+    <form id="form" method="GET" action="" (ngSubmit)="onSubmit()" [formGroup]="registerForm">
         <div class="form-container">
 
-            <input class="input-text" placeholder="Imię" name="name" id="name" required>
+            <input class="input-text" formControlName="fieldName" placeholder="Imię" name="name" id="name" required>
             <span id="errors_name" class="errors-text"></span>
 
-            <input class="input-text" placeholder="Nazwisko" name="surname" id="surname" required>
+            <input class="input-text" formControlName="fieldSurname" placeholder="Nazwisko" name="surname" id="surname" required>
             <span id="errors_surname" class="errors-text"></span>
 
             <div class="birthday">
                 Data urodzenia:
                 <br>
-                <input type="date" id="birthday" class="birthday-class">
+                <input type="date" formControlName="fieldBirthday" id="birthday" class="birthday-class">
                 <span id="errors_birthday" class="errors-text"></span>
             </div>
 
-            <input class="input-text" placeholder="PESEL" name="PESEL" id="pesel" required>
+            <input class="input-text" formControlName="fieldPesel" placeholder="PESEL" name="PESEL" id="pesel" required>
             <span id="errors_pesel" class="errors-text"></span>
 
-            <input class="input-text" placeholder="Adres e-mail" name="email" id="email" required>
+            <input class="input-text" formControlName="fieldEmail" placeholder="Adres e-mail" name="email" id="email" required>
             <span id="errors_email" class="errors-text"></span>
 
             <div class="password-container">
-                <input class="input-password" type="password" placeholder="Hasło" name="password" id="password"
+                <input class="input-password" formControlName="fieldPassword" type="password" placeholder="Hasło" name="password" id="password"
                     required>
 
                 <span id="errors_password" class="errors-text"></span>
             </div>
 
             <div class="password-container">
-                <input class="input-password" type="password" placeholder="Powtórz hasło" name="password-repeat"
+                <input class="input-password" formControlName="fieldRPassword" type="password" placeholder="Powtórz hasło" name="password-repeat"
                     id="rpassword" required>
 
                 <span id="errors_rpassword" class="errors-text"></span>
@@ -50,7 +50,7 @@
 
             <br>
 
-            <input type="submit" class="register" value="Zarejestruj się" id="inputButton">
+            <input type="submit" class="register" value="Zarejestruj się" id="inputButton" [disabled]="!registerForm.valid">
             <p id="errors_info" class="errors-submit"></p>
 
         </div>

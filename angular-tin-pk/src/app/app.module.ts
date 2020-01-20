@@ -20,6 +20,7 @@ import { DeleteRecordComponent } from './delete-record/delete-record.component';
 import { ListTenComponent } from './list-ten/list-ten.component';
 import { ListTweComponent } from './list-twe/list-twe.component';
 import { ListThiComponent } from './list-thi/list-thi.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { ListThiComponent } from './list-thi/list-thi.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
